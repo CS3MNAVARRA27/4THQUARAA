@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<style>
+       
+    
+
+            *{
+                margin: 0;
+                list-style: none;
+            }
+
+        body
+            {
+                background-image: url("crcampus.jpeg");
+                background-repeat: no-repeat;
+                background-size: 113%;
+            }
+
+        .sidething1
+            {
+                position: fixed;
+                float: left;
+                height: 100%;
+                width: 6vw;
+                display: inline;
+                background: #2F447D;
+            }
+
+        .sidething2
+            {
+                position: fixed;
+                right: 0;
+                height: 100%;
+                width: 6vw;
+                display: inline;
+                background: #2F447D;
+            }
+
+        .pic1
+            {
+                height: 30vh;
+                width: 25w;
+                margin-left: 37%;
+                margin-top: 60px;
+            }
+
+        .pic2
+            {
+                height: 27vh;
+                width: 27w;
+                margin-left: -60px;
+                margin-top: -50px;
+            }
+
+        .pic3
+            {
+                height: 30vh;
+                width: 15vw;
+                margin-left: 35%;
+                margin-top: -60px;
+            }
+
+        .pic4
+            {
+                height: 29vh;
+                width: 15vw;
+                margin-left: -60px;
+                margin-top: -50px;
+                margin-bottom: -23px;
+            }
+
+        .text1
+            {
+                font-family: "Anton";
+                padding-top: 60px;
+                font-size: 97px;
+                color: white;
+            }
+
+        .text2
+            {
+                font-family: "Anton";
+                font-size: 97px;
+                color: white;
+                padding-bottom: 30px;
+            }
+        
+        .logopisay
+            {
+                height: 22vh;
+                width: 10vw;
+                margin-left: -19%;
+                margin-bottom: -10px;
+            }
+
+        .ibtn
+            {
+                text-decoration: none;
+                font-family: "Anton";
+                font-size: 56px;
+                color: white;
+                background-color: #2F447D;
+                margin-left: 43.5%; 
+                padding: 12px 13px;
+                transition: 0.3s;
+            }
+        .ibtn:hover
+            {
+                padding: 18px;
+            }
+            
+    </style>
+</html>

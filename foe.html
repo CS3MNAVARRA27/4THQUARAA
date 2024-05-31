@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEBSITE</title>
+	</head>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+	</head>
+<body> 
+
+        <nav>
+
+
+        <h1 class="PISAYTitle1">SCIENCE</h1>
+        <h1 class="PISAYTitle2">STUDY</h1>
+       
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+        </label>
+        <div class="sidebar">
+            <ul>
+                <li> <a href="targets.html">TARGETS</a></li>
+				<li> <a href="foe.html">FUTURE OF EXPLORATION</a></li>
+				<li> <a href="hioe.html"> HISTORY OF EXPLORATION</a></li>
+		</ul>
+        </div>
+
+        </nav>
+		
+		<div class="subtitle">
+		       <h1>FUTURE OF EXPLORATION</h1>
+	    </div>
+		
+		<div class="description">
+		
+		  <div class="desc-container">
+    <img src="JWS.jpeg" alt="deez nuts">
+    <div class="text">
+		<p>-----JAMES WEBB SPACE TELESCOPE</p>
+        <p>The James Webb Space Telescope (JWST or "Webb") is a space telescope that is the successor to the Hubble Space Telescope. The JWST will provide greatly improved resolution and sensitivity over the Hubble, and will enable a broad range of investigations across the fields of astronomy and cosmology, including observing some of the most distant events and objects in the universe, such as the formation of the first galaxies. Other goals include understanding the formation of stars and planets, and direct imaging of exoplanets and novas.</p>
+    </div>
+</div>
+
+<div class="desc-container1">
+
+    <div class="text">
+		<p>-----ASTEROIDS</p>
+        <p>Those who passed will get opportunities to show themselves in a challenging and thrilling learning environment.</p>
+    </div>
+    <img src="ASTEROID.jpeg" alt="deez nuts">
+</div>
+
+<div class="desc-container2">
+   
+    <div class="text">
+		<p>-----BREAKTHROUGH STARSHOT</p>
+        <p>Breakthrough Starshot is a research and engineering project by the Breakthrough Initiatives to develop a proof-of-concept fleet of light sail spacecraft named StarChip,[52] to be capable of making the journey to the Alpha Centauri star system 4.37 light-years away. It was founded in 2016 by Yuri Milner, Stephen Hawking, and Mark Zuckerberg.</p>
+	
+    </div>
+	
+</div>
+
+<div class="desc-container3">
+
+    <div class="text">
+		<p>-----ARTENIS PROGRAM</p>
+        <p>The Artemis program is an ongoing crewed spaceflight program carried out by NASA, U.S. commercial spaceflight companies, and international partners such as ESA,[60] with the goal of landing "the first woman and the next man" on the Moon, specifically at the lunar south pole region by 2024. Artemis would be the next step towards the long-term goal of establishing a sustainable presence on the Moon, laying the foundation for private companies to build a lunar economy, and eventually sending humans to Mars.</p>
+    </div>
+</div>
+    </body>
+</html>
+<style>
+     
+          *{
+             margin: 0;
+             list-style: none;
+           }
+			body::before {
+			content: "";
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: url('pic4.jpg') center/cover no-repeat;
+			filter: blur(5px);
+			z-index: -1;
+    }
+            }
+
+        .navButton
+            {
+                padding: 15px;
+                margin-top: 4px;
+                margin-right: 100px;
+                float: right;
+            }
+
+        .sidebar
+            {
+                position: fixed;
+                float: right;
+                right: -280px;
+                width: 220px;
+                height: 400px;
+                border-top: 111px;
+                background: #221462 ;
+                transition: all .5s ease;
+            }
+        .sidebar ul a
+            {
+                display: block;
+                height: 100%;
+                width: 100%;
+                line-height: 75px;
+                font-family: "Anton";
+                font-size: 22px;
+                color: white;
+                padding-left: 10px;
+                box-sizing: border-box;
+                border-top: 3px solid white;
+                transition: .5s;
+            }
+
+        ul li:hover a
+            {
+                padding-left: 0px;
+            }
+
+        #check
+            {
+                
+                display: none;
+            }
+
+        label #btn    
+            {
+                position: absolute;
+                cursor: pointer;
+                
+            }
+
+        label #btn   
+            {
+                right: 30px;
+                top: 18px;
+                font-size: 70px;
+                color: white;
+            }
+
+        
+        #check:checked ~ .sidebar
+            {
+	               right: 0;
+            }
+
+        nav
+            {
+                width: 100%;
+                position: fixed;
+                height: 111px;
+                background: #3A2E6F ;
+            }
+
+
+        .cover
+            {
+                height: 50px;
+            }
+
+
+        .Title1
+            {
+                font-family: "Anton";
+                font-size: 37px;
+                color: white;
+            }
+
+        .Title2
+            {
+                font-family: "Anton";
+                font-size: 37px;
+                color: white;
+            }
+        .bigp1
+            {
+                height: 97vh;
+                width: 97vw;
+                margin-left: 10px;
+                
+            } 
+		.description
+		{
+                align-items: center;
+                justify-content: center;
+                height: 0px;
+                margin: 0;
+				text-align: center;
+		}
+		.desc-container,
+        .desc-container1,
+        .desc-container2 
+		.desc-container3
+		{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+        }
+
+        .desc-container img
+       
+		{
+                width: 500px;
+                height: 500px;
+                margin-left: 20px;
+        }
+
+        .desc-container1 img 
+		{
+                width: 400px;
+                height: 300px;
+                margin-right: 6px;
+				margin-left: 5px;
+        }     
+ 
+
+        .desc-container .text,
+        .desc-container1 .text,
+        .desc-container2 .text 
+		.desc-container3.text
+		{
+                flex: 1;
+        }
+
+        .desc-container p,
+        .desc-container1 p,
+        .desc-container2 p,
+		.desc-container3 p
+        	
+		{
+                text-align: justify;
+	            font-size: 30px;
+	            text-align: justify;
+                display: flex;
+                width: 650px;
+                margin: 10px auto;
+                background-color: rgba(0, 0, 128, 0.2);
+                padding: 10px;
+                border-radius: 10px;
+				color: white;
+        }
+		.desc-container1 p
+		{
+		margin-left: 20px;
+		}
+		 .desc-container2 p
+		 {
+		 width:1100px;
+		 }
+		 .desc-container3 p
+		 {
+		 width: 1100px;
+		 }
+		
+		
+		.subtitle
+		{
+		        font-size: 40px;
+		        display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 340px;
+                margin: 0;
+                text-align: center;
+				color:white;
+		}
+	
+		
+			
+			}
+			
+            @import url(https://www.onlinewebfonts.com/download/0d4bd6300a54d19c5fc62fe7e07c48cb);
+                @font-face 
+                    {
+                        font-family: "Anton";
+                        src: url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.eot");
+                        src: url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.eot?     #iefix")format("embedded-opentype"),
+                        url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.woff2")format("woff2"),
+                        url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.woff")format("woff"),
+                        url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.ttf")format("truetype"), url("https://db.onlinewebfonts.com/t/0d4bd6300a54d19c5fc62fe7e07c48cb.svg#Anton")format("svg");
+                    }
+					
+    
+
+            *{
+                margin: 0;
+                list-style: none;
+            }
+</style>

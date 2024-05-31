@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEBSITE</title>
+	</head>
+	<body>
+	 <video autoplay muted loop id="background-video">
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+	<form id="sign-up">
+		<fieldset form="sign-up">
+		<legend>
+		Welcome to SPACE EXPLORATION, where we study investigations of outer space through the use of astronomy and advanced technologies to discover more about the universe beyond Earth.
+</legend>
+		
+		<label for="name">Name:</label>
+		<input type="text" id="Fname" name="name" placeholder="First Name" onblur="Input(this)" onfocus="focusInput(this)">
+		<input type="text" id="Lname" name="name" placeholder="Last Name" onblur="Input(this)" onfocus="focusInput(this)">	
+		
+		<br> <label for="username">Username:</label>
+		<input type="text" id="username" name="username" onblur="Input(this)" onfocus="focusInput(this)">
+				
+		<br> <label for="password">Password:</label>
+		<input type="password" id="password" placeholder="Password" onblur="Input(this)" onfocus="focusInput(this)">
+		<input type="password" id="confirm_password" placeholder="Confirm Password" onblur="Input(this)" onfocus="focusInput(this)">
+		
+		<br> <label for="email">Email:</label>
+		<input type="email" id="email" pattern=".+@gmail.com" size="30" required onblur="Input(this)" onfocus="focusInput(this)">
+		
+		<button type="button" id="enterButton" onclick="submitForm()">Enter</button>
+		
+	</fieldset>
+	</form>
+<p class="output" id="output"></p>
+</body>
+
+    <script>
+    function Input(element) {
+            if (element.value.trim() === "") {
+                element.style.borderColor = "red";
+            } else {
+                element.style.borderColor = "green";
+            }
+        }
+
+        function focusInput(element) {
+            element.style.borderColor = "#ccc";
+        }
+
+        function submitForm() {
+            var requiredFields = ["Fname", "Lname", "username", "password", "confirm_password", "email"];
+            var allFieldsFilled = true;
+
+            requiredFields.forEach(function(fieldId) {
+                var element = document.getElementById(fieldId);
+                if (element.value.trim() === "") {
+                    element.style.borderColor = "red";
+                    allFieldsFilled = false;
+                } else {
+                    element.style.borderColor = "green";
+                }
+            });
+
+            if (allFieldsFilled) {
+                var formData = {
+                    firstName: document.getElementById("Fname").value,
+                    lastName: document.getElementById("Lname").value,
+                    username: document.getElementById("username").value,
+                    password: document.getElementById("password").value,
+                    email: document.getElementById("email").value
+                };
+
+                localStorage.setItem("formData", JSON.stringify(formData));
+
+                var outputText = "";
+                outputText += "First Name: " + formData.firstName + "<br>";
+                outputText += "Last Name: " + formData.lastName + "<br>";
+                outputText += "Username: " + formData.username + "<br>";
+                outputText += "Password: " + formData.password + "<br>";
+                outputText += "Email: " + formData.email + "<br>";
+                document.getElementById("output").innerHTML = outputText;
+
+                window.location.href = 'second_page.html';
+            } else {
+                alert("Please fill out all required fields.");
+            }
+        }
+		
+    </script>
+</body>
+</html>
+<style>
+		label {
+			font-weight: bold;
+			color: #7126B7  ;
+			font-size: 1em;
+			font-weight: bold;
+            display: block;
+            margin: 15px 0 5px;
+			}
+		body{
+			font-family: Arial, sans-serif;
+            margin: 30px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin-bottom: 10px;
+        }
+
+        form {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            margin: auto;
+        }
+
+        fieldset {
+            border: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        legend {
+            font-size: 18px;
+            color: #DFCDEC   ;
+			font-family: 'Courier New', monospace;
+			transition: color 0.3s ease, font-size 0.3s ease;
+        }
+		 legend:hover {
+            color: #C36BE2 ;
+            font-size: 20px;
+        }
+        
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select,
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #8F2B05  ;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #8F2B05 ;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #7F3317 ;
+        }
+		#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    transition: 1s opacity;
+	
+}
+    </style>

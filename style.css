@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<style>
+       
+    
+
+            *{
+                margin: 0;
+                list-style: none;
+            }
+
+        body
+            {
+                background-color: aliceblue;
+            }
+
+        .navButton
+            {
+                padding: 15px;
+                margin-top: 4px;
+                margin-right: 100px;
+                float: right;
+            }
+
+        nav
+            {
+                width: 100%;
+                position: fixed;
+                height: 111px;
+                background: #2F447D;
+            }
+
+      
+        .cover
+            {
+                height: 50px;
+            }
+
+
+        .PISAYTitle1
+            {
+                font-family: "Anton";
+                font-size: 37px;
+                color: white;
+            }
+
+        .PISAYTitle2
+            {
+                font-family: "Anton";
+                font-size: 37px;
+                color: white;
+            }
+
+        .textContainer
+            {
+                margin-left: 10px;
+                margin-right: 20px;
+                overflow: auto;
+            }
+
+        .img1
+            {
+                height: 469px;
+                float: left;
+                margin-top: 25px;
+            }
+        
+      
+        p
+            {
+                font-size: 30px;
+                text-align: justify;
+                margin-right: 20px;
+                margin-top: 25px;
+                margin-left: 20px;
+            }
+
+        .bigp1
+            {
+                height: 97vh;
+                width: 98vw;
+                margin: 0;
+            } 
+
+        .Title1
+            {
+                font-family: "Palatino";
+                font-size: 60px;
+                color: #2F447D;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 100px;
+            }
+
+        .Title2
+            {
+                font-family: "Palatino";
+                font-size: 60px;
+                color: #2F447D;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 2px;
+            }
+        
+        .pic1
+            {
+                height: 80vh;
+                width: 70vw;
+                padding: 100px;
+            } 
+
+        .pic2
+            {
+                height: 80vh;
+                width: 70vw;
+                padding: 100px;
+            }
+
+        
+        .pic3
+            {
+                height: 80vh;
+                width: 70vw;
+                padding: 100px;
+            }
+
+        .pic4
+            {
+                height: 80vh;
+                width: 70vw;
+                padding: 100px;   
+            }
+
+        .text1
+            {
+                margin-top: 60px;
+                margin-left: 250px;
+                margin-bottom: 60px;
+                margin-right: 250px;
+            } 
+
+        .text2
+            {  
+                margin-top: 60px;
+                margin-left: 250px;
+                margin-bottom: 60px;
+                margin-right: 250px;  
+            }
+
+        
+        .text3
+            {
+                margin-top: 60px;
+                margin-left: 250px;
+                margin-bottom: 60px;
+                margin-right: 250px;
+            }
+
+        .text4
+            {
+               
+                margin-top: 60px;
+                margin-left: 250px;
+                margin-bottom: 60px;
+                margin-right: 250px;
+                
+            }
+
+        .pic5
+            {
+                height: 80vh;
+                width: 70vw;
+                padding: 100px;
+            } 
+
+        .pic6
+            {
+                height: 80vh;
+                width: 70vw;
+                padding: 100px;
+            }
+
+        
+        .pic7
+            {
+                height: 80vh;
+                width: 70vw;
+                padding: 100px;
+            }
+
+        .pic8
+            {
+                height: 80vh;
+                width: 70vw;
+                padding: 100px;
+            }
+
+        .text5
+            {
+                margin-top: 60px;
+                margin-left: 250px;
+                margin-bottom: 60px;
+                margin-right: 250px;
+            } 
+
+        .text6
+            {
+                margin-top: 60px;
+                margin-left: 250px;
+                margin-bottom: 60px;
+                margin-right: 250px;
+            }
+
+        
+        .text7
+            {
+                margin-top: 60px;
+                margin-left: 250px;
+                margin-bottom: 60px;
+                margin-right: 250px;
+            }
+
+        .text8
+            {
+                margin-top: 60px;
+                margin-left: 250px;
+                margin-bottom: 60px;
+                margin-right: 250px;
+            }
+        
+
+    </style>
+</html>

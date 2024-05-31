@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+        .navButton
+            {
+                padding: 15px;
+                margin-top: 4px;
+                margin-right: 100px;
+                float: right;
+            }
+
+        nav
+            {
+                width: 100%;
+                position: fixed;
+                height: 111px;
+                background: #2F447D;
+            }
+
+     
+        .sidebar
+            {
+                position: fixed;
+                float: right;
+                right: -280px;
+                width: 220px;
+                height: 310px;
+                border-top: 111px;
+                background: #44c3d3;
+                transition: all .5s ease;
+            }
+        .sidebar ul a
+            {
+                display: block;
+                height: 100%;
+                width: 100%;
+                line-height: 75px;
+                font-family: "Anton";
+                font-size: 22px;
+                color: white;
+                padding-left: 10px;
+                box-sizing: border-box;
+                border-top: 3px solid white;
+                transition: .5s;
+            }
+
+        ul li:hover a
+            {
+                padding-left: 0px;
+            }
+
+        #check
+            {
+                
+                display: none;
+            }
+
+        label #btn    
+            {
+                position: absolute;
+                cursor: pointer;
+                
+            }
+
+        label #btn   
+            {
+                right: 30px;
+                top: 18px;
+                font-size: 70px;
+                color: black;
+            }
+
+        
+        #check:checked ~ .sidebar
+            {
+	               right: 0;
+            }
+
+    </style>
+</html>
